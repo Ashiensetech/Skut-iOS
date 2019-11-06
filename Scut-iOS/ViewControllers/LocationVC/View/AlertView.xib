@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="Scut_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="715-6n-JpH" id="tsZ-Od-sGy"/>
+                <outlet property="denyBtn" destination="YLo-ym-I3c" id="3Qy-rz-Mgt"/>
+                <outlet property="doneBtn" destination="hTG-r8-od5" id="qTv-fb-Zpe"/>
+                <outlet property="img" destination="tvQ-Tg-ECi" id="Fcu-6D-u4g"/>
+                <outlet property="messageLbl" destination="HSF-1V-CHJ" id="COb-Er-ff0"/>
+                <outlet property="parentView" destination="iN0-l3-epB" id="fem-3O-VIy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="715-6n-JpH">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="250"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-Tg-ECi">
+                            <rect key="frame" x="13" y="33" width="30" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="NM8-iJ-y8C"/>
+                                <constraint firstAttribute="width" constant="30" id="r9m-dy-X0T"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-r8-od5">
+                            <rect key="frame" x="231" y="206" width="52" height="19"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="FnW-5G-zVG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="ALLOW">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Skut to use the location information of this device?" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSF-1V-CHJ">
+                            <rect key="frame" x="60" y="26" width="227" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="79" id="5kB-XD-PIR"/>
+                                <constraint firstAttribute="width" constant="227" id="LnO-IN-dwL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLo-ym-I3c">
+                            <rect key="frame" x="167" y="206" width="40" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="hPg-dI-SKt"/>
+                            </constraints>
+                            <state key="normal" title="DENY">
+                                <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hTG-r8-od5" secondAttribute="bottom" constant="25" id="4vf-1z-Ty7"/>
+                        <constraint firstAttribute="trailing" secondItem="HSF-1V-CHJ" secondAttribute="trailing" constant="8" id="D5I-3q-JzT"/>
+                        <constraint firstAttribute="trailing" secondItem="hTG-r8-od5" secondAttribute="trailing" constant="12" id="JwH-H4-TVs"/>
+                        <constraint firstItem="tvQ-Tg-ECi" firstAttribute="leading" secondItem="715-6n-JpH" secondAttribute="leading" constant="13" id="KkX-J5-5c0"/>
+                        <constraint firstItem="hTG-r8-od5" firstAttribute="top" secondItem="HSF-1V-CHJ" secondAttribute="bottom" constant="101" id="Quk-Q7-83N"/>
+                        <constraint firstItem="hTG-r8-od5" firstAttribute="leading" secondItem="YLo-ym-I3c" secondAttribute="trailing" constant="24" id="VIX-yg-47W"/>
+                        <constraint firstItem="tvQ-Tg-ECi" firstAttribute="top" secondItem="715-6n-JpH" secondAttribute="top" constant="33" id="caK-2G-XdO"/>
+                        <constraint firstItem="HSF-1V-CHJ" firstAttribute="leading" secondItem="tvQ-Tg-ECi" secondAttribute="trailing" constant="17" id="hiu-7H-Hav"/>
+                        <constraint firstAttribute="bottom" secondItem="YLo-ym-I3c" secondAttribute="bottom" constant="25" id="mdC-um-hL3"/>
+                        <constraint firstItem="HSF-1V-CHJ" firstAttribute="top" secondItem="715-6n-JpH" secondAttribute="top" constant="26" id="vqR-rw-HYj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="715-6n-JpH" secondAttribute="trailing" id="W8w-oF-nKQ"/>
+                <constraint firstItem="715-6n-JpH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b3s-1E-d5k"/>
+                <constraint firstItem="715-6n-JpH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nra-pu-oiy"/>
+                <constraint firstAttribute="bottom" secondItem="715-6n-JpH" secondAttribute="bottom" id="zS6-7J-ZGb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-36" y="-92.653673163418304"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pin" width="72" height="72"/>
+    </resources>
+</document>

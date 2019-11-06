@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddPaymentView" customModule="Scut_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBig" translatesAutoresizingMaskIntoConstraints="NO" id="jm4-SG-aS6">
+                    <rect key="frame" x="19" y="30" width="337.5" height="267"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay Faster, Ride Fastly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EO-MP-670">
+                    <rect key="frame" x="37.5" y="315.5" width="300" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAi-Yn-bVu">
+                    <rect key="frame" x="19" y="395.5" width="337.5" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GH7-6J-cNB"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLb-cA-jZn">
+                    <rect key="frame" x="19" y="433.5" width="337.5" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="aDG-ye-QSg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-Wu-mW6">
+                    <rect key="frame" x="19" y="484.5" width="337.5" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="uwm-RT-LQT"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="yy/mm" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mid-ZG-Sb9">
+                    <rect key="frame" x="28" y="444.5" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="O51-cX-YQY"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDg-sP-cne">
+                    <rect key="frame" x="19" y="612" width="337.5" height="45"/>
+                    <color key="backgroundColor" red="0.23283398151397705" green="0.22357049584388733" blue="0.31183800101280212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Ua3-L0-0gL"/>
+                    </constraints>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="19"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cvv" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Lb-Sp-4VG">
+                    <rect key="frame" x="187.5" y="444.5" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="x5M-DT-Yqt"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iAi-Yn-bVu" firstAttribute="top" secondItem="7EO-MP-670" secondAttribute="bottom" constant="44" id="A7r-Ci-sp9"/>
+                <constraint firstItem="hdc-Wu-mW6" firstAttribute="width" secondItem="iAi-Yn-bVu" secondAttribute="width" id="Ad1-Md-1mq"/>
+                <constraint firstItem="7EO-MP-670" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ga8-qH-CbN"/>
+                <constraint firstItem="jm4-SG-aS6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="H2H-aK-O3C"/>
+                <constraint firstItem="LLb-cA-jZn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Im4-6v-wsc"/>
+                <constraint firstItem="jm4-SG-aS6" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="Inb-85-Cd9"/>
+                <constraint firstItem="Mid-ZG-Sb9" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="K6N-qw-gr1"/>
+                <constraint firstItem="hdc-Wu-mW6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NMf-vs-azN"/>
+                <constraint firstItem="Mid-ZG-Sb9" firstAttribute="top" secondItem="LLb-cA-jZn" secondAttribute="bottom" constant="10" id="Nzs-Cq-Yb2"/>
+                <constraint firstItem="jm4-SG-aS6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Qoh-id-4p2"/>
+                <constraint firstItem="9Lb-Sp-4VG" firstAttribute="top" secondItem="LLb-cA-jZn" secondAttribute="bottom" constant="10" id="TAx-Eh-1O7"/>
+                <constraint firstItem="hdc-Wu-mW6" firstAttribute="top" secondItem="Mid-ZG-Sb9" secondAttribute="bottom" constant="10" id="V4M-dK-GOg"/>
+                <constraint firstItem="iAi-Yn-bVu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WT2-jv-Vyo"/>
+                <constraint firstItem="Mid-ZG-Sb9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.55" id="aTF-OH-Gsn"/>
+                <constraint firstItem="9Lb-Sp-4VG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.4" id="aWw-iR-Jmf"/>
+                <constraint firstItem="iAi-Yn-bVu" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="bVZ-0h-6s7"/>
+                <constraint firstItem="LLb-cA-jZn" firstAttribute="width" secondItem="iAi-Yn-bVu" secondAttribute="width" id="brh-eW-bNA"/>
+                <constraint firstItem="qDg-sP-cne" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="gsi-iF-xbT"/>
+                <constraint firstItem="7EO-MP-670" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="i8D-Bi-NE1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qDg-sP-cne" secondAttribute="bottom" constant="10" id="leT-Bk-PW1"/>
+                <constraint firstItem="qDg-sP-cne" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mhb-pt-wMp"/>
+                <constraint firstItem="jm4-SG-aS6" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="qqN-Iu-p9F"/>
+                <constraint firstItem="9Lb-Sp-4VG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="sIr-2f-7UJ"/>
+                <constraint firstItem="LLb-cA-jZn" firstAttribute="top" secondItem="iAi-Yn-bVu" secondAttribute="bottom" constant="8" id="sRs-kb-B1i"/>
+                <constraint firstItem="7EO-MP-670" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tSZ-aV-DgA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addPContinueBtn" destination="qDg-sP-cne" id="MpD-YP-gGb"/>
+            </connections>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CardBig" width="205" height="142"/>
+    </resources>
+</document>

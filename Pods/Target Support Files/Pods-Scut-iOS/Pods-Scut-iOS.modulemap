@@ -1,0 +1,6 @@
+framework module Pods_Scut_iOS {
+  umbrella header "Pods-Scut-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
